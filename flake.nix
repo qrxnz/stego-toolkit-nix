@@ -19,8 +19,10 @@
         nativeBuildInputs = with pkgs; [
           # Basic tools
           file
+          hexyl
           ffmpeg
           binwalk
+          steghide
           exiftool
           imagemagick
 
@@ -28,10 +30,12 @@
           zsteg
           foremost
           pngcheck
-          openstego
 
           # Audio
           sonic-visualiser
+
+          # Ohters
+          ares-rs
         ];
       };
   };
