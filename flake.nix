@@ -17,8 +17,10 @@
       pkgs.mkShell
       {
         nativeBuildInputs = with pkgs; [
-          python311Full
-          python311Packages.pycryptodomex
+          # basic tools
+          file
+          binwalk
+          exiftool
         ];
       };
   };
