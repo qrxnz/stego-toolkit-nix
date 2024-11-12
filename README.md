@@ -12,6 +12,9 @@ If you have Nix installed with `experimental features` and `flakes` support acti
 ```sh
 https://github.com/qrxnz/stego-toolkit-nix.git
 ```
+In the 'stego-toolkit-nix' directory, use the command `nix develop` or if you are using `direnv`, type `direnv allow`
+
+Done! You can start using the tools. Below you will find a list and instructions
 
 ## 🗒️ Credits
 
