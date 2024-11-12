@@ -17,6 +17,8 @@ In the 'stego-toolkit-nix' directory, use the command `nix develop` or if you ar
 Done! You can start using the tools. Below you will find a list and instructions
 
 ## 🧰 Tools
+> \[!IMPORTANT\]
+> New tools will soon be on the list
 
 ### Basic
 
@@ -25,6 +27,8 @@ Done! You can start using the tools. Below you will find a list and instructions
 ### Video
 
 ### Audio
+
+### Others
 
 ### 🗒️ Credits
 
