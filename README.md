@@ -18,7 +18,15 @@ Done! You can start using the tools. Below you will find a list and instructions
 
 ## 🧰 Tools
 
-## 🗒️ Credits
+### Basic
+
+### Images
+
+### Video
+
+### Audio
+
+### 🗒️ Credits
 
 ### 🎨 Inspiration
 
