@@ -27,6 +27,9 @@
           zsteg
           foremost
           pngcheck
+
+          # Audio
+          sonic-visualiser
         ];
       };
   };
