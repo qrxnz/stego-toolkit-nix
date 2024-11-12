@@ -19,6 +19,7 @@
         nativeBuildInputs = with pkgs; [
           # Basic tools
           file
+          ffmpeg
           binwalk
           exiftool
           imagemagick
@@ -27,6 +28,7 @@
           zsteg
           foremost
           pngcheck
+          openstego
 
           # Audio
           sonic-visualiser
