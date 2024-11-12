@@ -21,9 +21,12 @@
           file
           binwalk
           exiftool
+          imagemagick
 
           # Images
           zsteg
+          foremost
+          pngcheck
         ];
       };
   };
