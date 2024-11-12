@@ -3,6 +3,8 @@
 ## ✒️ Description
 > The finest collection of steganography tools. - You like Docker? You love Nix ❤️ 
 
+stego-toolkit-nix is a tool inspired by Dominic Breuker's 'stego-toolkit.' By utilizing nix, stego-toolkit-nix offers greater flexibility, resulting in an improved user experience
+
 ## 🗒️ Credits
 
 ### 🎨 Inspiration
