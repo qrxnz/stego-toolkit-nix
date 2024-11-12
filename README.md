@@ -1,5 +1,8 @@
 # stego-toolkit-nix
 
+## ✒️ Description
+> The finest collection of steganography tools. - You like Docker? You love Nix ❤️ 
+
 ## 🗒️ Credits
 
 ### 🎨 Inspiration
