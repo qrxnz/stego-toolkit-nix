@@ -17,10 +17,13 @@
       pkgs.mkShell
       {
         nativeBuildInputs = with pkgs; [
-          # basic tools
+          # Basic tools
           file
           binwalk
           exiftool
+
+          # Images
+          zsteg
         ];
       };
   };
