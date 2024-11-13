@@ -22,25 +22,34 @@ Done! You can start using the tools. Below you will find a list and instructions
 
 ### Basic
 
-| Tools | Description | Example usage |
-| --- |---|---|
-| file | Identify file type  | file file_name  |
-| [hexyl](https://github.com/sharkdp/hexyl)  |  A command-line hex viewer   | `hexyl file_name`  |
-| ffmpeg  | aaa  | `ffmpeg -v info -i stego.mp3 -f null -` \ read docs for more |
-| [steghide](https://steghide.sourceforge.net/)  | Steghide is a steganography program that is able to hide data in various kinds of image and audio files |  `steghide extract -sf file_name` \ read docs for more  |
-| [exiftool](https://exiftool.org/)  |  Read, Write and Edit Meta Information  | `exiftool file_name`  \ read docs for more |
+| Tools | Description | File types | Example usage |
+| --- | --- | --- | --- |
+| file | Identify file type  | - | `file file_name`  |
+| [hexyl](https://github.com/sharkdp/hexyl)  |  A command-line hex viewer   | - | `hexyl file_name`  |
+| ffmpeg  | aaa  | | `ffmpeg -v info -i stego.mp3 -f null -` \ read docs for more |
+| [steghide](https://steghide.sourceforge.net/)  | Steghide is a steganography program that is able to hide data in various kinds of image and audio files | - | `steghide extract -sf file_name` \ read docs for more  |
+| [stegseek](https://github.com/RickdeJager/stegseek)  | ⚡ Worlds fastest steghide cracker, chewing through millions of passwords per second ⚡  | - | `stegseek [stegofile.jpg] [wordlist.txt]` |
+| [exiftool](https://exiftool.org/)  |  Read, Write and Edit Meta Information  | - | `exiftool file_name`  \ read docs for more |
+| [foremost](https://github.com/gerryamurphy/Foremost)  |  Foremost is a console program to recover files based on their headers, footers, and internal data structures   | - | `foremost file_name` |
 
 ### Images
 
-| Tools | Description | Example usage |
-| --- |---|---|
-| [imagemagick](https://imagemagick.org/)  | Software suite, used for editing and manipulating digital images  | read docs |
-
-### Video
+| Tools | Description | File types| Example usage |
+| --- |---|---| --- |
+| [zteg](https://github.com/zed-0xff/zsteg)  |  detect stegano-hidden data in PNG & BMP  | `PNG`, `BMP` | `zsteg --all file_name` |
+| [pngcheck](https://pmt.sourceforge.io/pngcrush/)  |  Verifies the integrity of PNG, JNG and MNG files  | `PNG`, `JNG`, `MNG` | `pngcheck file_name.png` |
+| [stegsolve](https://github.com/Giotino/stegsolve)  |  Interactive stegano solver  | Images | `pngcheck file_name.png` |
+| [imagemagick](https://imagemagick.org/)  | Software suite, used for editing and manipulating digital images | `JPEG`, `PNG`, `GIF`, `TIFF` and more | read docs |
 
 ### Audio
+| Tools | Description | File types| Example usage |
+| --- |---|---| --- |
+| [sonic-visualiser](https://sonicvisualiser.org/)  | Visualisation, analysis, and annotation of music audio recordings | Audio | read docs |
 
 ### Others
+| Tools | Description | File types| Example usage |
+| --- |---|---| --- |
+| [Ares](https://github.com/bee-san/Ares)  | Automated decoding of encrypted text without knowing the key or ciphers used | - | `ares -t 'encrypted_text' -d |
 
 ### 🗒️ Credits
 

@@ -23,11 +23,12 @@
           ffmpeg
           binwalk
           steghide
+          stegseek
           exiftool
+          foremost
 
           # Images
           zsteg
-          foremost
           pngcheck
           stegsolve
           imagemagick
