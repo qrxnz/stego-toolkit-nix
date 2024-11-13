@@ -22,7 +22,19 @@ Done! You can start using the tools. Below you will find a list and instructions
 
 ### Basic
 
+| Tools | Description | Example usage |
+| --- |---|---|
+| file | Identify file type  | file file_name  |
+| [hexyl](https://github.com/sharkdp/hexyl)  |  A command-line hex viewer   | `hexyl file_name`  |
+| ffmpeg  | aaa  | `ffmpeg -v info -i stego.mp3 -f null -` \ read docs for more |
+| [steghide](https://steghide.sourceforge.net/)  | Steghide is a steganography program that is able to hide data in various kinds of image and audio files |  `steghide extract -sf file_name` \ read docs for more  |
+| [exiftool](https://exiftool.org/)  |  Read, Write and Edit Meta Information  | `exiftool file_name`  \ read docs for more |
+
 ### Images
+
+| Tools | Description | Example usage |
+| --- |---|---|
+| [imagemagick](https://imagemagick.org/)  | Software suite, used for editing and manipulating digital images  | read docs |
 
 ### Video
 

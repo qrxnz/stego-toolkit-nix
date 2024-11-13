@@ -24,13 +24,13 @@
           binwalk
           steghide
           exiftool
-          imagemagick
 
           # Images
           zsteg
           foremost
           pngcheck
           stegsolve
+          imagemagick
 
           # Audio
           sonic-visualiser
