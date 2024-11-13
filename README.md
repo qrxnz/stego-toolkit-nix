@@ -26,7 +26,7 @@ Done! You can start using the tools. Below you will find a list and instructions
 | --- | --- | --- | --- |
 | file | Identify file type  | - | `file file_name`  |
 | [hexyl](https://github.com/sharkdp/hexyl)  |  A command-line hex viewer   | - | `hexyl file_name`  |
-| [ffmpeg](https://ffmpeg.org/)  | FFmpeg is the leading multimedia framework, able to decode, encode, transcode, mux, demux, stream, filter and play pretty much anything that humans and machines have created. | Audio/Video/Images | `ffmpeg -v info -i stego.mp3 -f null -` \ read docs for more |
+| [ffmpeg](https://ffmpeg.org/)  | FFmpeg is the leading multimedia framework, able to decode, encode, transcode, mux, demux, stream, filter and play pretty much anything that humans and machines have created. | Audio / Video / Images | `ffmpeg -v info -i stego.mp3 -f null -` \ read docs for more |
 | [steghide](https://steghide.sourceforge.net/)  | Steghide is a steganography program that is able to hide data in various kinds of image and audio files | - | `steghide extract -sf file_name` \ read docs for more  |
 | [stegseek](https://github.com/RickdeJager/stegseek)  | ⚡ Worlds fastest steghide cracker, chewing through millions of passwords per second ⚡  | - | `stegseek [stegofile.jpg] [wordlist.txt]` |
 | [exiftool](https://exiftool.org/)  |  Read, Write and Edit Meta Information  | - | `exiftool file_name`  \ read docs for more |
