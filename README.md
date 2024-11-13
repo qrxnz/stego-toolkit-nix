@@ -22,7 +22,7 @@ Done! You can start using the tools. Below you will find a list and instructions
 
 ### Basic
 
-| Tools | Description | File types | Example usage |
+| Tools | Description | File types | Usage |
 | --- | --- | --- | --- |
 | file | Identify file type  | - | `file file_name`  |
 | [hexyl](https://github.com/sharkdp/hexyl)  |  A command-line hex viewer   | - | `hexyl file_name`  |
@@ -34,7 +34,7 @@ Done! You can start using the tools. Below you will find a list and instructions
 
 ### Images
 
-| Tools | Description | File types| Example usage |
+| Tools | Description | File types | Usage |
 | --- |---|---| --- |
 | [zteg](https://github.com/zed-0xff/zsteg)  |  detect stegano-hidden data in PNG & BMP  | `PNG`, `BMP` | `zsteg --all file_name` |
 | [pngcheck](https://pmt.sourceforge.io/pngcrush/)  |  Verifies the integrity of PNG, JNG and MNG files  | `PNG`, `JNG`, `MNG` | `pngcheck file_name.png` |
@@ -42,12 +42,12 @@ Done! You can start using the tools. Below you will find a list and instructions
 | [imagemagick](https://imagemagick.org/)  | Software suite, used for editing and manipulating digital images | `JPEG`, `PNG`, `GIF`, `TIFF` and more | read docs |
 
 ### Audio
-| Tools | Description | File types| Example usage |
+| Tools | Description | File types| Usage |
 | --- |---|---| --- |
 | [sonic-visualiser](https://sonicvisualiser.org/)  | Visualisation, analysis, and annotation of music audio recordings | Audio | read docs |
 
 ### Others
-| Tools | Description | File types| Example usage |
+| Tools | Description | File types| Usage |
 | --- |---|---| --- |
 | [Ares](https://github.com/bee-san/Ares)  | Automated decoding of encrypted text without knowing the key or ciphers used | - | `ares -t 'encrypted_text' -d` |
 
