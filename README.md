@@ -49,7 +49,7 @@ Done! You can start using the tools. Below you will find a list and instructions
 ### Others
 | Tools | Description | File types| Example usage |
 | --- |---|---| --- |
-| [Ares](https://github.com/bee-san/Ares)  | Automated decoding of encrypted text without knowing the key or ciphers used | - | `ares -t 'encrypted_text' -d |
+| [Ares](https://github.com/bee-san/Ares)  | Automated decoding of encrypted text without knowing the key or ciphers used | - | `ares -t 'encrypted_text' -d` |
 
 ### 🗒️ Credits
 
