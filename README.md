@@ -1,7 +1,8 @@
 # stego-toolkit-nix
 
 ## ✒️ Description
-> The finest collection of steganography tools. - You like Docker? You love Nix ❤️ 
+
+> The finest collection of steganography tools. - You like Docker? You love Nix ❤️
 
 stego-toolkit-nix is a tool inspired by Dominic Breuker's `stego-toolkit`. By utilizing nix, stego-toolkit-nix offers greater flexibility, resulting in an improved user experience
 
@@ -12,11 +13,13 @@ If you have Nix installed with `experimental features` and `flakes` support acti
 ```sh
 https://github.com/qrxnz/stego-toolkit-nix.git
 ```
+
 In the 'stego-toolkit-nix' directory, use the command `nix develop` or if you are using `direnv`, use the command `direnv allow`
 
 Done! You can start using the tools. Below you will find a list and instructions
 
 ## 🧰 Tools
+
 > \[!IMPORTANT\]
 > New tools will soon be on the list
 
@@ -26,10 +29,10 @@ Done! You can start using the tools. Below you will find a list and instructions
 | --- | --- | --- | --- |
 | file | Identify file type  | - | `file file_name`  |
 | [hexyl](https://github.com/sharkdp/hexyl)  |  A command-line hex viewer   | - | `hexyl file_name`  |
-| [ffmpeg](https://ffmpeg.org/)  | FFmpeg is the leading multimedia framework, able to decode, encode, transcode, mux, demux, stream, filter and play pretty much anything that humans and machines have created. | Audio / Video / Images | `ffmpeg -v info -i stego.mp3 -f null -` \ read docs for more |
-| [steghide](https://steghide.sourceforge.net/)  | Steghide is a steganography program that is able to hide data in various kinds of image and audio files | - | `steghide extract -sf file_name` \ read docs for more  |
+| [ffmpeg](https://ffmpeg.org/)  | FFmpeg is the leading multimedia framework, able to decode, encode, transcode, mux, demux, stream, filter and play pretty much anything that humans and machines have created. | Audio / Video / Images | `ffmpeg -v info -i stego.mp3 -f null -` \\ read docs for more |
+| [steghide](https://steghide.sourceforge.net/)  | Steghide is a steganography program that is able to hide data in various kinds of image and audio files | - | `steghide extract -sf file_name` \\ read docs for more  |
 | [stegseek](https://github.com/RickdeJager/stegseek)  | ⚡ Worlds fastest steghide cracker, chewing through millions of passwords per second ⚡  | - | `stegseek [stegofile.jpg] [wordlist.txt]` |
-| [exiftool](https://exiftool.org/)  |  Read, Write and Edit Meta Information  | - | `exiftool file_name`  \ read docs for more |
+| [exiftool](https://exiftool.org/)  |  Read, Write and Edit Meta Information  | - | `exiftool file_name`  \\ read docs for more |
 | [foremost](https://github.com/gerryamurphy/Foremost)  |  Foremost is a console program to recover files based on their headers, footers, and internal data structures   | - | `foremost file_name` |
 
 ### Images
@@ -42,11 +45,13 @@ Done! You can start using the tools. Below you will find a list and instructions
 | [imagemagick](https://imagemagick.org/)  | Software suite, used for editing and manipulating digital images | `JPEG`, `PNG`, `GIF`, `TIFF` and more | read docs |
 
 ### Audio
+
 | Tools | Description | File types| Usage |
 | --- |---|---| --- |
 | [sonic-visualiser](https://sonicvisualiser.org/)  | Visualisation, analysis, and annotation of music audio recordings | Audio | read docs |
 
 ### Others
+
 | Tools | Description | File types| Usage |
 | --- |---|---| --- |
 | [Ares](https://github.com/bee-san/Ares)  | Automated decoding of encrypted text without knowing the key or ciphers used | - | `ares -t 'encrypted_text' -d` |
