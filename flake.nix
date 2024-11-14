@@ -38,6 +38,11 @@
 
           # Ohters
           ares-rs
+
+          # Formatters
+          treefmt2
+          mdformat
+          alejandra
         ];
       };
   };
