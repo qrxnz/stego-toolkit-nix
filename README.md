@@ -11,7 +11,7 @@ stego-toolkit-nix is a tool inspired by Dominic Breuker's `stego-toolkit`. By ut
 If you have Nix installed with `experimental features` and `flakes` support activated, the first step is to clone the repository
 
 ```sh
-https://github.com/qrxnz/stego-toolkit-nix.git
+git clone https://github.com/qrxnz/stego-toolkit-nix.git .
 ```
 
 In the 'stego-toolkit-nix' directory, use the command `nix develop` or if you are using `direnv`, use the command `direnv allow`
