@@ -19,7 +19,7 @@ If you have Nix installed with `experimental features` and `flakes` support acti
 curl -L https://raw.githubusercontent.com/qrxnz/stego-toolkit-nix/refs/heads/main/flake.nix -s --output flake.nix
 ```
 
-In the 'stego-toolkit-nix' directory, use the command `nix develop` or if you are using `direnv`, use the command `direnv allow`
+In the 'stego-toolkit-nix' directory, use the command `nix develop` or you can use `direnv` instead
 
 Done! You can start using the tools. Below you will find a list and instructions
 
