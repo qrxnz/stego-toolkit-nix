@@ -1,11 +1,23 @@
 {
-  outputs = { self }: {
+  outputs = {
+    self,
+    nixpkgs,
+  }: let
+    system = "x86_64-linux";
+    pkgs = import nixpkgs {inherit system;};
+  in {
+    devShells.${system}.default = pkgs.mkShell {
+      buildInputs = with pkgs; [
+        alejandra
+        mdformat
+        treefmt2
+      ];
+    };
+
     templates = {
-      stego-toolkit = {
+      stego = {
         path = ./stego-toolkit;
       };
     };
   };
-
-  templates.default = "stego-toolkit";
 }
