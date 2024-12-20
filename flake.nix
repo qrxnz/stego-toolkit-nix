@@ -1,52 +1,36 @@
 {
-  description = "stego-toolkit";
-
-  inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
-  };
+  description = "A collection of flake templates";
 
   outputs = {
     self,
     nixpkgs,
-    ...
-  } @ inputs: let
+  }: let
     system = "x86_64-linux";
-    pkgs = import nixpkgs {
-      system = "x86_64-linux";
-      config.allowUnfree = true;
-    };
+    pkgs = import nixpkgs {inherit system;};
   in {
-    devShells.x86_64-linux.default =
-      pkgs.mkShell
-      {
-        nativeBuildInputs = with pkgs; [
-          # Basic tools
-          file
-          hexyl
-          ffmpeg
-          binwalk
-          steghide
-          stegseek
-          exiftool
-          foremost
+    devShells.${system}.default = pkgs.mkShell {
+      buildInputs = with pkgs; [
+        treefmt2
+        mdformat
+        alejandra
+      ];
+    };
 
-          # Images
-          zsteg
-          pngcheck
-          stegsolve
-          imagemagick
+    templates = {
+      default = {
+        path = ./stego-toolkit;
+        welcomeText = ''
 
-          # Audio
-          sonic-visualiser
 
-          # Ohters
-          ares-rs
-
-          # Formatters
-          treefmt2
-          mdformat
-          alejandra
-        ];
+           ▄▀▀▀▀▄  ▄▀▀▀█▀▀▄  ▄▀▀█▄▄▄▄  ▄▀▀▀▀▄    ▄▀▀▀▀▄   ▄▀▀▀█▀▀▄  ▄▀▀▀▀▄   ▄▀▀▀▀▄   ▄▀▀▀▀▄      ▄▀▀▄ █  ▄▀▀█▀▄    ▄▀▀▀█▀▀▄
+          █ █   ▐ █    █  ▐ ▐  ▄▀   ▐ █         █      █ █    █  ▐ █      █ █      █ █    █      █  █ ▄▀ █   █  █  █    █  ▐
+             ▀▄   ▐   █       █▄▄▄▄▄  █    ▀▄▄  █      █ ▐   █     █      █ █      █ ▐    █      ▐  █▀▄  ▐   █  ▐  ▐   █
+          ▀▄   █     █        █    ▌  █     █ █ ▀▄    ▄▀    █      ▀▄    ▄▀ ▀▄    ▄▀     █         █   █     █        █
+           █▀▀▀    ▄▀        ▄▀▄▄▄▄   ▐▀▄▄▄▄▀ ▐   ▀▀▀▀    ▄▀         ▀▀▀▀     ▀▀▀▀     ▄▀▄▄▄▄▄▄▀ ▄▀   █   ▄▀▀▀▀▀▄   ▄▀
+           ▐      █          █    ▐   ▐                  █                             █         █    ▐  █       █ █
+                  ▐          ▐                           ▐                             ▐         ▐       ▐       ▐ ▐
+        '';
       };
+    };
   };
 }
