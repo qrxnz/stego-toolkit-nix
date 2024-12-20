@@ -17,7 +17,7 @@
     };
 
     templates = {
-      default = {
+      stego-toolkit = {
         path = ./stego-toolkit;
         welcomeText = ''
 
@@ -32,5 +32,7 @@
         '';
       };
     };
+
+    defaultTemplate = self.templates.stego-toolkit;
   };
 }
