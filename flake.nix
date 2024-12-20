@@ -31,8 +31,8 @@
                   ▐          ▐                           ▐                             ▐         ▐       ▐       ▐ ▐
         '';
       };
-    };
 
-    defaultTemplate = self.templates.stego-toolkit;
+      defaultTemplate = self.templates.stego-toolkit;
+    };
   };
 }
