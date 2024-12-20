@@ -1,10 +1,11 @@
 {
-  outputs = {self}: {
+  outputs = { self }: {
     templates = {
       stego-toolkit = {
         path = ./stego-toolkit;
+        description = "Impermanent flake";
       };
-
-    defaultTemplate = self.templates.flakeonly;
+    };
+    defaultTemplate = self.templates.stego-toolkit;
   };
 }
