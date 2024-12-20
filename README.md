@@ -8,12 +8,6 @@ stego-toolkit-nix is a tool inspired by Dominic Breuker's `stego-toolkit`. By ut
 
 ## 📖 Usage
 
-Prerequisite:
-
-- install:
-  - curl
-  - Nix
-
 If you have Nix installed with `experimental features` and `flakes` support activated, the first step is to clone the repository
 
 ```sh
