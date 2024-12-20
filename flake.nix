@@ -19,5 +19,7 @@
         path = ./stego-toolkit;
       };
     };
+
+    defaultTemplate = self.templates.stego;
   };
 }
