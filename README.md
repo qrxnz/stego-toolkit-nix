@@ -55,6 +55,7 @@ Done! You can start using the tools. Below you will find a list and instructions
 | Tools | Description | File types| Usage |
 | --- |---|---| --- |
 | [Ares](https://github.com/bee-san/Ares)  | Automated decoding of encrypted text without knowing the key or ciphers used | - | `ares -t 'encrypted_text' -d` |
+| [lemmeknow](https://github.com/swanandx/lemmeknow)  | `lemmeknow` can be used for identifying mysterious text or to analyze hard-coded strings from captured network packets, malwares, or just about anything | - | `lemmeknow file_name` |
 
 ### 🗒️ Credits
 

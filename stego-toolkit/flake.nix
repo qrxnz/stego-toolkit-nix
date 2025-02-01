@@ -39,6 +39,7 @@
 
           # Ohters
           ares-rs
+          lemmeknow
         ];
       };
   };
