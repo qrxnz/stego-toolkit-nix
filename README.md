@@ -8,7 +8,7 @@ stego-toolkit-nix is a tool inspired by Dominic Breuker's `stego-toolkit`. By ut
 
 ## 📖 Usage
 
-If you have Nix installed with `experimental features` and `flakes` support activated, the first step is to clone the repository
+If you have Nix installed with `experimental features` and `flakes` support activated, the first step to get started fast just use the following command:
 
 ```sh
 nix flake init -t github:qrxnz/stego-toolkit-nix
