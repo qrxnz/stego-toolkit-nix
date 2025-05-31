@@ -1,37 +1,29 @@
 {
-  inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
-  };
+  inputs.utils.url = "github:numtide/flake-utils";
 
   outputs = {
     self,
     nixpkgs,
-    ...
-  } @ inputs: let
-    system = "x86_64-linux";
-    pkgs = import nixpkgs {
-      system = "x86_64-linux";
-      config.allowUnfree = true;
-    };
-  in {
-    devShells.x86_64-linux.default =
-      pkgs.mkShell
-      {
-        nativeBuildInputs = with pkgs; [
+    utils,
+  }:
+    utils.lib.eachDefaultSystem (
+      system: let
+        pkgs = import nixpkgs {inherit system;};
+      in {
+        devShells.default = pkgs.mkShell rec {
+          buildInputs = with pkgs; [
           # Basic tools
           file
           hexyl
           ffmpeg
           binwalk
           steghide
-          stegseek
           exiftool
           foremost
 
           # Images
           zsteg
           pngcheck
-          stegsolve
           imagemagick
 
           # Audio
@@ -40,7 +32,13 @@
           # Ohters
           ares-rs
           lemmeknow
-        ];
+          ];
+        };
+      }
+    )
+    // {
+      overlays.default = self: pkgs: {
+        hello = self.packages."${pkgs.system}".hello;
       };
-  };
+    };
 }
