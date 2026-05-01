@@ -12,9 +12,10 @@
       in {
         devShells.default = pkgs.mkShell rec {
           buildInputs = with pkgs; [
-            treefmt2
-            mdformat
+            treefmt
+            taplo
             alejandra
+            nodePackages.prettier
           ];
         };
 
@@ -34,7 +35,7 @@
       overlays.default = final: prev: {
         stego-toolkit = self.packages."${final.system}".stego-toolkit;
       };
-    
+
       templates = {
         stego = {
           path = ./stego-toolkit;
