@@ -4,15 +4,43 @@ stego-toolkit-nix is a tool inspired by [Dominic Breuker's](https://linkedin.com
 
 ## 📖 Usage
 
-If you have Nix installed with `experimental features` and `flakes` support activated, the first step to get started fast just use the following command:
+You can use `stego-toolkit-nix` in several ways, depending on your needs:
+
+### As a Flake Template
+
+If you want to start a new project with a pre-configured environment containing all the tools:
 
 ```sh
 nix flake init -t github:qrxnz/stego-toolkit-nix
+nix develop
 ```
 
-In the 'stego-toolkit-nix' directory, use the command `nix develop` or you can use `direnv` instead
+_Alternatively, if you are using `direnv`, simply run `direnv allow` after initializing._
 
-Done! You can start using the tools. Below you will find a list and instructions
+### As a Package
+
+- **Run without installing**
+
+You can run the toolkit directly without any setup:
+
+```bash
+nix run github:qrxnz/mremotedec
+```
+
+- **Add to a Nix Flake**
+
+Add input in your flake like:
+
+```nix
+{
+ inputs = {
+   mremotedec = {
+     url = "github:qrxnz/mremotedec";
+     inputs.nixpkgs.follows = "nixpkgs";
+   };
+ };
+}
+```
 
 ## 🧰 Tools
 
