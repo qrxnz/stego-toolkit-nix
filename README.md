@@ -35,10 +35,22 @@ Add input in your flake like:
 {
  inputs = {
    mremotedec = {
-     url = "github:qrxnz/mremotedec";
+     url = "github:qrxnz/stego-toolkit-nix";
      inputs.nixpkgs.follows = "nixpkgs";
    };
  };
+}
+```
+
+With the input added you can reference it directly:
+
+```nix
+{ inputs, system, ... }:
+{
+  # NixOS
+  environment.systemPackages = [ inputs.stego-toolkit-nix.packages.${pkgs.system}.default ];
+  # home-manager
+  home.packages = [ inputs.stego-toolkit-nix.packages.${pkgs.system}.default ];
 }
 ```
 
