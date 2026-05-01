@@ -42,6 +42,12 @@ Add input in your flake like:
 }
 ```
 
+- **Install imperatively**
+
+```bash
+nix profile install github:qrxnz/stego-toolkit-nix
+```
+
 ## 🧰 Tools
 
 > \[!IMPORTANT\]
